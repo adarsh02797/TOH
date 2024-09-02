@@ -11,14 +11,17 @@
     width: fit-content;
     padding: 10px 30px 20px 4cqmin;
     box-shadow: 10px 10px 10px lightgray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-h2{
+h3{
     text-align: center;
+}
+
+footer{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
@@ -39,4 +42,8 @@ button{
     padding: 10px 20px;
     border: 1px solid black;
     border-radius: 20px;
+}
+
+button:first-child {
+    background-color: yellow;
 }

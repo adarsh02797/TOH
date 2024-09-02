@@ -33,6 +33,20 @@ export class HeroService {
     )
   }
 
+  create(hero: Hero){
+    return this.http.post<Hero>(`${this.baseUrl}`, hero)
+    .pipe(
+      catchError(this.handleError)
+    )
+  }
+
+  deleteHero(id: number) {
+    return this.http.delete<any>(`${this.baseUrl}/${id}`)
+    .pipe(
+      catchError(this.handleError)
+    )
+  }
+
   private handleError(error: HttpErrorResponse) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {

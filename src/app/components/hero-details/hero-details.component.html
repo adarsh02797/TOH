@@ -1,7 +1,11 @@
-<section *ngIf="hero">
-    <h2>{{hero.name | uppercase}}'s Details</h2>
-    <span class="badge">ID : </span>{{hero.id}}
-    <label for="hero-name">Hero Name : </label>
-    <input type="text" id="hero-name" [(ngModel)]="hero.name" placeholder="Name" (ngModelChange)="change()">
-    <button type="button" (click)="back()">Back</button>
+<section *ngIf="hero" class="container">
+    <section class="box">
+        <h2>{{hero.name | uppercase}}'s Details</h2>
+        <section><span class="badge">ID : </span>{{hero.id}}</section>
+        <section>
+            <label for="hero-name">Hero Name : </label>
+            <input type="text" id="hero-name" [(ngModel)]="hero.name" placeholder="Name" (ngModelChange)="change()">
+        </section>
+        <button type="button" (click)="back()">Back</button>
+    </section>
 </section>

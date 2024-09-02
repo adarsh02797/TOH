@@ -1,3 +1,19 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header a{
+    margin-left: 20px;
+    border-radius: 20px;
+    font-size: large;
+    padding: 4px 8px;
+    border: none;
+    color: antiquewhite;
+    background-color: darkslateblue;
+    text-decoration: none;
+    font-weight: 900;
+}
 h2{
     text-align: center;
     color: darkslateblue;
@@ -46,6 +62,20 @@ li:hover .hero-name{
     color: white;
 }
 
-li:hover .badge{
-    background-color: rgb(27, 35, 41);
+li button {
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 4px 8px;
+    border: none;
+    color: antiquewhite;
+    background-color: darkslateblue;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 5px;
+    visibility: hidden;
+    
+}
+
+li:hover button{
+    visibility: visible;
 }

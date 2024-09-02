@@ -1,4 +1,7 @@
-<header><h2>My Heroes</h2></header>
+<header>
+    <h2>My Heroes</h2>
+    <a routerLink="/add"> + </a>
+</header>
 <nav>
     <ul>
         <li *ngFor="let hero of heroes">
@@ -6,6 +9,7 @@
                 <span class="badge">{{hero.id}}</span>
                 <span class="hero-name">{{hero.name}}</span>
             </a>
+            <button (click)="delete(hero.id)"> x </button>
         </li>
     </ul>
 </nav>
