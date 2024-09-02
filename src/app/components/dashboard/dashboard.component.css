@@ -1,0 +1,43 @@
+h2{
+    text-align: center;
+    color: darkslateblue;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a{
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: aliceblue;
+    text-decoration: none;
+    color: black;
+}
+
+.badge{
+    /* margin-right: 15px; */
+    background-color: darkslateblue;
+    padding: 10px;
+    color: antiquewhite;
+    border-radius: 10px 0 0 10px;
+    transition: 0.3s ease-out background-color;
+}
+.hero-name{
+    padding: 10px 20px;
+    background-color: rgb(203, 225, 244);
+    border-radius: 0 10px 10px 0;
+    transition: 0.3s ease-in-out background-color;
+}
+
+a:hover .hero-name{
+    background-color: darkslateblue;
+    color: white;
+}
+
+a:hover .badge{
+    background-color: rgb(27, 35, 41);
+}
