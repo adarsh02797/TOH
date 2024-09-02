@@ -15,7 +15,6 @@ export class DashboardComponent {
   ngOnInit(): void {
     this.heroService.getAllHeroes().subscribe({
       next: heroes => {
-        console.log(heroes.length)
         if(heroes.length>=4)this.topHeroes = heroes.slice(0,4);
         else if(heroes.length>0)this.topHeroes = heroes.slice(0,heroes.length);
         else console.log('No heroes present')
