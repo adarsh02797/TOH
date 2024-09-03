@@ -1,0 +1,7 @@
+<header><h2>Top Heroes</h2></header>
+<nav>
+    <a *ngFor="let hero of topHeroes" routerLink="/details/{{hero.id}}" routerLinkActive="active">
+        <span class="badge">{{hero.id}}</span>
+        <span class="hero-name">{{hero.name}}</span>
+    </a>
+</nav>

@@ -1,0 +1,13 @@
+<section class="container">
+    <section class="box">
+        <h3>New Hero</h3>
+        <section>
+            <label for="hero-name">Hero Name </label>
+            <input type="text" id="hero-name" placeholder="Name" #heroName>
+        </section>
+        <footer>
+            <button type="button" (click)="add(heroName.value);">Add</button>
+            <button type="button" (click)="back()">Back</button>
+        </footer>
+    </section>
+</section>

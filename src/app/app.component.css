@@ -1,0 +1,39 @@
+header{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    margin-left: 20px;
+    padding: 15px 25px;
+    background-color: antiquewhite;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+}
+
+nav a:hover{
+    background-color: rgb(240, 173, 85);
+    font-weight: bold;
+}
+
+nav a.active {
+    background-color: rgb(240, 173, 85);
+    font-weight: bold;
+}
+
+footer{
+    background-color: aliceblue;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
